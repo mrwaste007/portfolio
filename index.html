@@ -1,66 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seenivasan R — Power Platform, SharePoint and Full Stack Developer portfolio." />
+  <title>Seenivasan R | Power Platform & Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#home"><span>SR</span> Seenivasan R</a>
+    <button class="menu" aria-label="Open menu">☰</button>
     <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>PORTFOLIO</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About Me</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <!-- <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div> -->
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
-            </div>
-            
-        </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">About Me</a>
-                <a href="#">Skills</a>
-                <!-- <a href="#">Service</a> -->
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <section>
-        <div class="main-container">
-            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="./assets/Media-modified.jpg" alt="">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Seenivasn R</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for=""></label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am an experienced Full-Stack Developer skilled in Power Apps, Power Automate, Power Pages, and WordPress. I specialize in building responsive web applications, custom APIs, and automating workflows. With a focus on scalability and performance, I deliver solutions that optimize business processes and enhance user experiences.</p>
-                <!-- <div class="social-links">
-                    <a href="https://github.com/mrwaste007" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/seenivasan-r-182411212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-                </div> -->
-                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <a href="mailto:seeni6149@gmail.com"><button>Hire Me</button></a>
-                </div>
-            </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Available for opportunities</p>
+        <h1>Building <em>useful</em> software<br>that moves work forward.</h1>
+        <p class="lead">
+          Power Platform & Full Stack Developer focused on enterprise applications,
+          workflow automation, SharePoint solutions and modern web experiences.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="btn secondary" href="resume.pdf" download>Download resume <span>↓</span></a>
         </div>
+        <div class="tech-row">
+          <span>Power Apps</span><span>Power Automate</span><span>SharePoint</span>
+          <span>React</span><span>Node.js</span><span>TypeScript</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="terminal">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>developer.ts</span></div>
+          <pre><code><b>const</b> developer = {
+  name: <strong>"Seenivasan R"</strong>,
+  focus: <strong>"Enterprise Apps"</strong>,
+  stack: [
+    <strong>"Power Platform"</strong>,
+    <strong>"SharePoint"</strong>,
+    <strong>"React"</strong>,
+    <strong>"Node.js"</strong>
+  ],
+  mindset: <strong>"Build. Automate. Improve."</strong>
+};</code></pre>
+        </div>
+        <div class="float-card"><span>3+</span><small>Years experience</small></div>
+      </div>
     </section>
-     <!-- <section>
-       <div>
-        
-       </div>
-     </section> -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:0});
-    </script>
-    <script src="script.js"></script>
+
+    <section id="about" class="section about">
+      <div class="section-label">01 / ABOUT</div>
+      <div>
+        <h2>From business requirements<br>to working applications.</h2>
+        <p>
+          I design and develop scalable, secure and user-friendly business applications
+          using Microsoft Power Platform, SharePoint Online, Dataverse and modern web
+          technologies. I enjoy turning complex processes into simple experiences and
+          automating repetitive work.
+        </p>
+        <p>
+          My background spans Power Apps, Power Automate, SharePoint development,
+          REST API integrations and full-stack web development with JavaScript,
+          TypeScript, React and Node.js.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 / TOOLKIT</div>
+      <div class="skills-grid">
+        <article class="skill-card featured">
+          <div class="icon">⚡</div>
+          <h3>Microsoft Platform</h3>
+          <p>Business applications and automation built around the Microsoft ecosystem.</p>
+          <div class="tags"><span>Power Apps</span><span>Power Automate</span><span>SharePoint Online</span><span>Dataverse</span><span>SPFx</span><span>Graph API</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="icon">◈</div>
+          <h3>Frontend</h3>
+          <p>Responsive interfaces with a focus on clarity, usability and maintainability.</p>
+          <div class="tags"><span>React.js</span><span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>Responsive Design</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="icon">⌘</div>
+          <h3>Backend & Data</h3>
+          <p>APIs, server-side development and relational data solutions.</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>SQL</span><span>MySQL</span><span>PHP</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="icon">↗</div>
+          <h3>Engineering</h3>
+          <p>Integration, troubleshooting, version control and workflow automation.</p>
+          <div class="tags"><span>Git</span><span>API Integration</span><span>Automation</span><span>Problem Solving</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-label">03 / WHAT I BUILD</div>
+      <div class="work-intro">
+        <h2>Solutions designed around<br>real business problems.</h2>
+        <p>Areas of work represented by my professional experience.</p>
+      </div>
+      <div class="work-grid">
+        <article class="project-card">
+          <div class="project-top"><span>01</span><span>Power Platform</span></div>
+          <h3>Business Applications</h3>
+          <p>Custom Power Apps experiences that turn business processes into straightforward, user-friendly applications.</p>
+          <div class="project-tags"><span>Power Apps</span><span>Dataverse</span><span>SharePoint</span></div>
+        </article>
+        <article class="project-card accent">
+          <div class="project-top"><span>02</span><span>Automation</span></div>
+          <h3>Workflow Automation</h3>
+          <p>Automated workflows that connect business processes, SharePoint solutions and notifications to reduce repetitive work.</p>
+          <div class="project-tags"><span>Power Automate</span><span>SharePoint</span><span>Automation</span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span>03</span><span>Microsoft 365</span></div>
+          <h3>SharePoint Solutions</h3>
+          <p>Custom SharePoint functionality, document management, integrations and access-control focused solutions.</p>
+          <div class="project-tags"><span>SharePoint Online</span><span>SPFx</span><span>Graph API</span></div>
+        </article>
+        <article class="project-card accent">
+          <div class="project-top"><span>04</span><span>Full Stack</span></div>
+          <h3>Modern Web Applications</h3>
+          <p>Responsive applications built with React, Node.js and Express, supported by APIs and SQL-based data solutions.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>SQL</span></div>
+        </article>
+      </div>
+      <div class="note">Want detailed case studies? Add your real project screenshots, links and outcomes here.</div>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="section-label">04 / EXPERIENCE</div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="date">APR 2023 — PRESENT</div>
+          <div class="timeline-content">
+            <span class="role">Full Stack Web Developer</span>
+            <h3>Toolfe · Chennai, India</h3>
+            <ul>
+              <li>Develop responsive web applications using React, Node.js and Express.</li>
+              <li>Work with JavaScript, SQL and HTML to develop application solutions.</li>
+              <li>Create APIs for third-party integrations with attention to performance and security.</li>
+              <li>Collaborate on UI/UX improvements, Git-based development, debugging and code reviews.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="date">APR 2023 — PRESENT</div>
+          <div class="timeline-content">
+            <span class="role">SharePoint Developer</span>
+            <h3>Toolfe · Chennai, India</h3>
+            <ul>
+              <li>Develop custom SharePoint solutions for collaboration and document management.</li>
+              <li>Integrate third-party applications and automate processes with Power Automate.</li>
+              <li>Gather requirements with cross-functional teams and deliver tailored functionality.</li>
+              <li>Implement permissions and access controls for SharePoint sites and libraries.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education">
+      <div class="section-label">05 / EDUCATION</div>
+      <div class="edu-card">
+        <span class="year">2021</span>
+        <div><h3>Bachelor of Engineering — Computer Science</h3><p>Unnamalai Institute of Technology · Kovilpatti, India</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <p class="eyebrow">06 / CONTACT</p>
+        <h2>Have a problem<br>worth building around?</h2>
+        <p>Let's connect and talk about applications, automation, SharePoint or web development.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:seeni6149@gmail.com">Email me <span>↗</span></a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/seenivasan4691" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+        </div>
+        <div class="email">seeni6149@gmail.com</div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Seenivasan R</span><span>Power Platform · SharePoint · Full Stack</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
